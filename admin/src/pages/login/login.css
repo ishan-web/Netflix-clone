@@ -1,0 +1,25 @@
+.login{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginInput{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.loginButton{
+    padding: 5px;
+    color: white;
+    background-color: firebrick;
+    border: none;
+    cursor: pointer;
+}
