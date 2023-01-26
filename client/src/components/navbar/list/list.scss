@@ -1,0 +1,44 @@
+.list{
+    width: 100%;
+    margin-top: 10px;
+
+    .listTitle{
+        color: whitesmoke;
+        font-size: 25px;
+        font-weight: 500px;
+        margin-left: 15px;
+    }
+
+    .wrapper{
+        position: relative;
+        .sliderArrow{
+            height: 50%;
+            width: 25px;
+            color: whitesmoke;
+            background-color: rgb(22, 22, 22, 0.5);
+            position: absolute;
+            margin: auto;
+            z-index: 99;
+            top: 0;
+            bottom: 0;
+            cursor: pointer;
+
+            &.Left{
+                left: 0;
+            }
+
+            &.Right{
+                right: 0;
+            }
+
+        }
+        .container{
+            margin-top: 10px;
+            margin-left: 15px;
+            display: flex;
+            width: max-content;
+            transform: translateX(0px);
+            transition: all 1s ease;
+        }
+    }
+}
