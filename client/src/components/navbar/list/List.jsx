@@ -23,7 +23,9 @@ export default function List({list}) {
     }
     return (
       <div className="list">
-        <span className="listTitle">{list.title}</span>
+
+        {/* remove the comments */}
+        {/* <span className="listTitle">{list.title}</span> */} 
         <div className="wrapper">
             <ArrowBackIosOutlined className="sliderArrow Left" onClick={()=>handleClick("left")} style={{display: !isMoved && "none"}}/>
             <div className="container" ref={listRef}>
