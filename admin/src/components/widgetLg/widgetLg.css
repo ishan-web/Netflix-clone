@@ -6,13 +6,8 @@
 }
 
 .widgetLgTitle {
-  color: firebrick;
   font-size: 22px;
   font-weight: 600;
-}
-
-.widgetLgTr{
-  color: firebrick;
 }
 
 .widgetLgTable{
@@ -36,10 +31,6 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
-}
-
-.widgetLgName{
-  color: darkred;
 }
 
 .widgetLgDate,.widgetLgAmount{

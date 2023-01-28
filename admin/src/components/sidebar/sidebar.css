@@ -1,14 +1,14 @@
 .sidebar {
   flex: 1;
   height: calc(100vh - 50px);
-  background-color: firebrick;
+  background-color: rgb(251, 251, 255);
   position: sticky;
   top: 50px;
 }
 
 .sidebarWrapper {
   padding: 20px;
-  color: white;
+  color: #555;
 }
 
 .sidebarMenu {
@@ -17,7 +17,7 @@
 
 .sidebarTitle {
   font-size: 13px;
-  color:white;
+  color: rgb(187, 186, 186);
 }
 
 .sidebarList {
@@ -33,9 +33,8 @@
   border-radius: 10px;
 }
 
-
+.sidebarListItem.active,
 .sidebarListItem:hover {
-  color: firebrick;
   background-color: rgb(240, 240, 255);
 }
 

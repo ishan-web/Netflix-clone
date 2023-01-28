@@ -7,22 +7,21 @@ import { ListContext } from "../../context/listContext/ListContext";
 import { deleteList, getLists } from "../../context/listContext/apiCalls";
 
 export default function ListList() {
-  const {lists, dispatch} = useContext(ListContext);
+  const { lists, dispatch } = useContext(ListContext);
 
-  useEffect(()=>{
+  useEffect(() => {
     getLists(dispatch);
-  },[dispatch]);
+  }, [dispatch]);
 
   const handleDelete = (id) => {
-      deleteList(id,dispatch);
+    deleteList(id, dispatch);
   };
 
   const columns = [
     { field: "_id", headerName: "ID", width: 250 },
-    { field: "title", headerName: "Title", width: 250 },
+    { field: "title", headerName: "title", width: 250 },
     { field: "genre", headerName: "Genre", width: 150 },
-    { field: "type", headerName: "Type", width: 150 },
-
+    { field: "type", headerName: "type", width: 150 },
     {
       field: "action",
       headerName: "Action",
@@ -30,7 +29,9 @@ export default function ListList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={{pathname: "/list/" + params.row._id, list: params.row}}>
+            <Link
+              to={{ pathname: "/list/" + params.row._id, list: params.row }}
+            >
               <button className="productListEdit">Edit</button>
             </Link>
             <DeleteOutline

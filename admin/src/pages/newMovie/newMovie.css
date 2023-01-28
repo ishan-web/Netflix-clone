@@ -3,17 +3,17 @@
 }
 
 .addProductForm {
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
 }
 
 .addProductItem {
-  padding: 20px;
   width: 250px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  padding: 20px;
 }
 
 .addProductItem > label {
@@ -36,9 +36,9 @@
   padding: 7px 10px;
   border: none;
   border-radius: 10px;
-  background-color: firebrick;
+  background-color: darkblue;
   color: white;
   font-weight: 600;
-  align-self: center;
   cursor: pointer;
+  align-self: center;
 }

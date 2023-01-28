@@ -1,16 +1,15 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCUWySt8J1HS0js9k8gjRcGETF7-VrVyyk",
-    authDomain: "movieflix-8afb1.firebaseapp.com",
-    projectId: "movieflix-8afb1",
-    storageBucket: "movieflix-8afb1.appspot.com",
-    messagingSenderId: "773725209151",
-    appId: "1:773725209151:web:3f545ff57d9e943f21ee8a",
-    measurementId: "G-15XM6SHPWC"
-  };
+  apiKey: process.env.APP_KEY,
+  authDomain: "netflix-151df.firebaseapp.com",
+  projectId: "netflix-151df",
+  storageBucket: "netflix-151df.appspot.com",
+  messagingSenderId: "316700975498",
+  appId: "1:316700975498:web:15063159b205c1a349a873",
+  measurementId: "G-2ZGE63ES9F",
+};
 
-  firebase.initializeApp(firebaseConfig);
-  const storage = firebase.storage();
-
-  export default storage;
+firebase.initializeApp(firebaseConfig);
+const storage = firebase.storage();
+export default storage;

@@ -15,7 +15,6 @@
 }
 
 .featuredTitle{
-    color: firebrick;
     font-size: 20px;
 }
 
@@ -26,7 +25,6 @@
 }
 
 .featuredMoney{
-    color:darkred;
     font-size: 30px;
     font-weight: 600;
 }
@@ -49,5 +47,5 @@
 
 .featuredSub{
     font-size: 15px;
-    color: firebrick;
+    color: gray;
 }

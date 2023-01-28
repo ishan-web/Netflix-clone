@@ -7,7 +7,6 @@
 }
 
 .widgetSmTitle{
-    color: firebrick;
     font-size: 22px;
     font-weight: 600;
 }
@@ -38,7 +37,6 @@
 }
 
 .widgetSmUsername{
-    color: firebrick;
     font-weight: 600;
 }
 
@@ -52,8 +50,8 @@
     border: none;
     border-radius: 10px;
     padding: 7px 10px;
-    background-color: firebrick;
-    color: white;
+    background-color: #eeeef7;
+    color: #555;
     cursor: pointer;
 }
 

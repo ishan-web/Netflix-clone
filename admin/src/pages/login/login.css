@@ -1,25 +1,25 @@
-.login{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.loginForm{
-    display: flex;
-    flex-direction: column;
+.loginForm {
+  display: flex;
+  flex-direction: column;
 }
 
-.loginInput{
-    padding: 5px;
-    margin-bottom: 10px;
+.loginInput {
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
-.loginButton{
-    padding: 5px;
-    color: white;
-    background-color: firebrick;
-    border: none;
-    cursor: pointer;
+.loginButton {
+  background-color: teal;
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
 }

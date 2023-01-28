@@ -6,12 +6,12 @@ import { useContext, useEffect } from "react";
 import { MovieContext } from "../../context/movieContext/MovieContext";
 import { deleteMovie, getMovies } from "../../context/movieContext/apiCalls";
 
-export default function ProductList() {
-  const {movies, dispatch} = useContext(MovieContext);
+export default function MovieList() {
+  const { movies, dispatch } = useContext(MovieContext);
 
-  useEffect(()=>{
+  useEffect(() => {
     getMovies(dispatch);
-  },[dispatch]);
+  }, [dispatch]);
 
   const handleDelete = (id) => {
     deleteMovie(id, dispatch);
@@ -26,18 +26,16 @@ export default function ProductList() {
       renderCell: (params) => {
         return (
           <div className="productListItem">
-            <img className="productListImg" src={params.row.image} alt="" />
+            <img className="productListImg" src={params.row.img} alt="" />
             {params.row.title}
           </div>
         );
       },
     },
-
     { field: "genre", headerName: "Genre", width: 120 },
-    { field: "year", headerName: "Year", width: 120 },
-    { field: "limit", headerName: "Limit", width: 120 },
+    { field: "year", headerName: "year", width: 120 },
+    { field: "limit", headerName: "limit", width: 120 },
     { field: "isSeries", headerName: "isSeries", width: 120 },
-    { field: "duration", headerName: "Duration", width: 120 },
 
     {
       field: "action",
@@ -46,7 +44,9 @@ export default function ProductList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={{pathname: "/product/" + params.row._id, movie: params.row}}>
+            <Link
+              to={{ pathname: "/movie/" + params.row._id, movie: params.row }}
+            >
               <button className="productListEdit">Edit</button>
             </Link>
             <DeleteOutline
